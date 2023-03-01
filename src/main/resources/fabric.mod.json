@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "netherskip",
+  "version": "1.0",
+
+  "name": "(Nether) Portal Skip Mod",
+  "description": "This mod lets you skip the nether portal delay! So cool!",
+  "authors": [
+    "Mpcs"
+  ],
+  "contact": {
+    "homepage": "https://github.com/Mpcs",
+    "sources": "https://github.com/Mpcs/PortalDelaySkipMod"
+  },
+
+  "license": "GNU GPLv3",
+  "icon": "assets/netherskip/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.mpcs.netherskip.NetherSkipMod"
+    ],
+    "client": [
+      "com.mpcs.netherskip.NetherSkipMod"
+    ]
+  },
+  "mixins": [
+    "netherskip.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.14",
+    "fabric-api": "*",
+    "minecraft": "~1.19.3",
+    "java": ">=17"
+  }
+}
